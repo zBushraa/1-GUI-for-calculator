@@ -1,8 +1,8 @@
-import javax.swing.*;
-import javax.swing.border.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import javax.swing.*;
+import javax.swing.border.*;
 
 public class App extends JFrame {
     private JTextField display;
@@ -50,7 +50,7 @@ public class App extends JFrame {
         titlePanel.setBorder(new LineBorder(new Color(30, 30, 30), 2));
 
         JLabel titleLabel = new JLabel("CALCULATOR");
-        titleLabel.setForeground(Color.WHITE);
+        titleLabel.setForeground(Color.BLACK);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 16));
         titleLabel.setBorder(new EmptyBorder(8, 15, 8, 15));
         titlePanel.add(titleLabel, BorderLayout.WEST);
@@ -80,7 +80,7 @@ public class App extends JFrame {
         JButton btn = new JButton(text);
         btn.setPreferredSize(new Dimension(30, 25));
         btn.setBackground(bgColor);
-        btn.setForeground(Color.WHITE);
+        btn.setForeground(Color.BLACK);
         btn.setBorder(new LineBorder(new Color(200, 200, 200), 1));
         btn.setFont(new Font("Arial", Font.BOLD, 12));
         btn.setFocusPainted(false);
